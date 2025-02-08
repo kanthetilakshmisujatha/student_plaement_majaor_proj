@@ -1,0 +1,219 @@
+/* General App Styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Heading Animation */
+.heading {
+  font-size: 2.5rem;
+  color: #1eb2a6;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Animation for form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Increased width */
+  transition: all 0.3s ease;
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Input Fields Styles */
+input,
+select {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%; /* Increased width */
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #1eb2a6;
+  box-shadow: 0 0 10px rgba(30, 178, 166, 0.6);
+  transform: scale(1.05);
+}
+
+input:hover,
+select:hover {
+  border-color: #1eb2a6;
+  transform: scale(1.03);
+}
+
+/* Button Styles */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; /* Increased width */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.test-start-button {
+  background-color: #1eb2a6;
+  color: white;
+}
+
+.test-start-button:hover {
+  background-color: #168e7f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(30, 178, 166, 0.3);
+}
+
+.prediction-button {
+  background-color: skyblue;
+  color: white;
+}
+
+.prediction-button:hover {
+  background-color: #5bc0de;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(91, 192, 222, 0.3);
+}
+
+/* Score Display Animation */
+.score-display {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #1eb2a6;
+  animation: fadeIn 1s ease-out;
+}
+
+.score-display.show {
+  display: block;
+}
+
+/* Result styles*/
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Same width as form */
+  transition: all 0.3s ease;
+  animation: slideUpResult 1s ease-out;
+  text-align: center;
+}
+
+
+.result-box h2 {
+  font-size: 2rem;
+  color: #1eb2a6;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+}
+
+.result-box p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+@keyframes slideUpResult {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.go-home-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1eb2a6;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.go-home-button:hover {
+  background-color: #168e7f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(30, 178, 166, 0.3);
+}
+
+.go-home-button:focus {
+  outline: none;
+}
+

@@ -1,0 +1,19 @@
+/* Add to your CSS file or inside the styled-components (if using) */
+.animated-heading {
+  display: inline-block;
+  font-size: 36px; /* You can adjust the font size */
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1s forwards; /* Animation applied */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Initial position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Final position */
+  }
+}

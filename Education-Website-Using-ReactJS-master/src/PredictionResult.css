@@ -1,0 +1,114 @@
+/* General Result Page Styles */
+.prediction-result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    transition: background-color 0.3s ease;
+    min-height: 100vh;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Heading Animation */
+  .prediction-result-container h2 {
+    font-size: 2.5rem;
+    color: #1eb2a6;
+    animation: fadeIn 2s ease-out;
+    margin-bottom: 20px;
+  }
+  
+  /* Result Message */
+  .prediction-result-container p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;  /* Maximum width for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-out;
+  }
+  
+  /* Success message */
+  .success {
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: 2px solid #00796b;
+  }
+  
+  /* Error message */
+  .error {
+    background-color: #ffebee;
+    color: #d32f2f;
+    border: 2px solid #d32f2f;
+  }
+  
+  /* Animation for result display */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Button Styles for Result Page */
+  .result-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 200px;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .result-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(30, 178, 166, 0.3);
+  }
+  
+  /* Styling for Back button */
+  .result-button.back {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .result-button.back:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Score Display (if you want to include a score after the result) */
+  .score-display {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #1eb2a6;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .score-display.show {
+    display: block;
+  }
+  
